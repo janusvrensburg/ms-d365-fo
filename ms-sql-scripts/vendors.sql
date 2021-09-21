@@ -1,3 +1,5 @@
+
+-- VENDORS
 SELECT [VND].[DATAAREAID]                        AS [Company_ID]
 
       ,NULLIF([VND].[ACCOUNTNUM], '')            AS [Vendor_ID]
@@ -29,7 +31,11 @@ SELECT [VND].[DATAAREAID]                        AS [Company_ID]
        LEFT JOIN [dbo].[PaymTerm] AS [VND_PAY_TRM]
               ON [VND_PAY_TRM].[PaymTermID] = [VND].[PaymTermID]
              AND [VND_PAY_TRM].[Partition]  = [VND].[Partition]
-             AND [VND_PAY_TRM].[DataAreaID] = [VND].[DataAreaID]
+             AND [VND_PAY_TRM].[DataAreaID] = [VND].[DataAreaID];
+             
+GO
+
+
 
        -- VENDOR DELIVERY TERM LOOKUP
        LEFT JOIN [dbo].[DlvTerm] AS [VND_DEL_TRM]
