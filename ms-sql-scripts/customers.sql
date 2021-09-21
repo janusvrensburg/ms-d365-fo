@@ -78,5 +78,5 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
        -- CUSTOMER EMPLOYEE RESPONSIBLE (NAME) LOOKUP
        LEFT JOIN [dbo].[DirPartyTable] AS [CUS_EMP_RES_NME]
               ON [CUS_EMP_RES_NME].[RecID]     = [CUS_EMP_RES].[Person]
-             AND [CUS_EMP_RES_NME].[Partition] = [CUS].[Partition];
+             AND [CUS_EMP_RES_NME].[Partition] = [CUS].[Partition]
 
