@@ -3,3 +3,7 @@
 
 - [Customers](./ms-sql-scripts/customers.sql)
 - [Vendors](./ms-sql-scripts/vendors.sql)
+
+
+
+<img src="./draw-io/inventory-management.drawio.svg">
