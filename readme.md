@@ -1,4 +1,4 @@
-<img src="https://github.com/janusvrensburg/ms-d365-fo/blob/main/ms-d365_fo.svg">
+<img src="https://raw.githubusercontent.com/janusvrensburg/ms-d365-fo/main/ms-d365_fo.drawio.svg">
 
 
 
