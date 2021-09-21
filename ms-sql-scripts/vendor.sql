@@ -1,6 +1,6 @@
 
--- VENDORS
-SELECT [VND].[DATAAREAID]                        AS [Company_ID]
+-- VENDOR
+SELECT [VND].[DataAreaID]                        AS [Company_ID]
 
       ,NULLIF([VND].[AccountNum], '')            AS [Vendor_ID]
       ,NULLIF([VND_NME].[Name], '')              AS [Vendor_Name]
@@ -16,7 +16,7 @@ SELECT [VND].[DATAAREAID]                        AS [Company_ID]
 
   FROM [dbo].[VendTable] AS [VND]
 
-       -- VENDOR NAME LOOKUP
+       -- VENDOR (NAME) LOOKUP
        LEFT JOIN [dbo].[DirPartyTable] AS [VND_NME]
               ON [VND_NME].[RecID]     = [VND].[Party]
              AND [VND_NME].[Partition] = [VND].[Partition]

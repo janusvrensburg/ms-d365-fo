@@ -29,7 +29,7 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
 
   FROM [dbo].[CustTableStaging] AS [CUS]
 
-       -- CUSTOMER NAME LOOKUP
+       -- CUSTOMER (NAME) LOOKUP
        LEFT JOIN [dbo].[DirPartyTable] AS [CUS_NME]
               ON [CUS_NME].[RecID]     = [CUS].[Party]
              AND [CUS_NME].[Partition] = [CUS].[Partition]
