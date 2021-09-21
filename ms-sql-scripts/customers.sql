@@ -81,3 +81,4 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
              AND [CUS_SLE_DIS].[DataAreaID]      = [CUS].[DataAreaID];
 
 GO
+
