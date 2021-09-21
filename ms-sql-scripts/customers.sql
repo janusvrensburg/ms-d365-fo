@@ -1,6 +1,4 @@
-https://github.com/janusvrensburg/ms-d365-fo
-
-
+-- CUSTOMERS
 SELECT [CUS].[DataAreaID]                        AS [Company_ID]
 
       ,[CUS].[AccountNum]                        AS [Customer_ID]
