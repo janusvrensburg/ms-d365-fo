@@ -2,8 +2,8 @@
 -- VENDORS
 SELECT [VND].[DATAAREAID]                        AS [Company_ID]
 
-      ,NULLIF([VND].[ACCOUNTNUM], '')            AS [Vendor_ID]
-      ,NULLIF([VND_NME].[NAME], '')              AS [Vendor_Name]
+      ,NULLIF([VND].[AccountNum], '')            AS [Vendor_ID]
+      ,NULLIF([VND_NME].[Name], '')              AS [Vendor_Name]
 
       ,NULLIF([VND].[VendGroup], '')             AS [Vendor_Group_ID]
       ,NULLIF([VND_GRP].[Name], '')              AS [Vendor_Group_Name]
