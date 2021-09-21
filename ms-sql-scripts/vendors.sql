@@ -41,4 +41,3 @@ SELECT [VND].[DATAAREAID]                        AS [Company_ID]
              
 GO
 
-
