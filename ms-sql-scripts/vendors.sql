@@ -37,5 +37,5 @@ SELECT [VND].[DATAAREAID]                        AS [Company_ID]
        LEFT JOIN [dbo].[DlvTerm] AS [VND_DEL_TRM]
               ON [VND_DEL_TRM].[Code]       = [VND].[DlvTerm]
              AND [VND_DEL_TRM].[Partition]  = [VND].[Partition]
-             AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID];
+             AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID]
 
