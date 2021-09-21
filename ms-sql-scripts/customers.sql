@@ -1,3 +1,4 @@
+
 -- CUSTOMERS
 SELECT [CUS].[DataAreaID]                        AS [Company_ID]
 
@@ -78,3 +79,5 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
               ON [CUS_SLE_DIS].[SalesDistrictID] = [CUS].[SalesDistrictID]
              AND [CUS_SLE_DIS].[Partition]       = [CUS].[Partition]
              AND [CUS_SLE_DIS].[DataAreaID]      = [CUS].[DataAreaID];
+
+GO
