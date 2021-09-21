@@ -8,3 +8,4 @@
 
 <img href="https://raw.githubusercontent.com/janusvrensburg/ms-d365-fo/main/draw-io/inventory-management.drawio.svg" src="./draw-io/inventory-management.drawio.svg">
 
+
