@@ -1,5 +1,5 @@
 
--- CUSTOMERS
+-- CUSTOMER
 SELECT [CUS].[DataAreaID]                        AS [Company_ID]
 
       ,[CUS].[AccountNum]                        AS [Customer_ID]
