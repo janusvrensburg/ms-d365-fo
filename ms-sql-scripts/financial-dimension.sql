@@ -1,8 +1,9 @@
 
 -- FINANCIAL DIMENSION
-SELECT [FIN_DIM].[DimensionAttributeValueSet]   AS [Financial_Dimension_ID]
-      ,[DIM_ATT].[Name]                         AS [Dimension_Attribute]
-      ,[FIN_DIM].[DisplayValue]                 AS [Attribute_Value]
+SELECT [FIN_DIM].[Partition]                    AS [Financial_Dimension_Partition]
+      ,[FIN_DIM].[DimensionAttributeValueSet]   AS [Financial_Dimension_ID]
+      ,[DIM_ATT].[Name]                         AS [Financial_Dimension_Name]
+      ,[FIN_DIM].[DisplayValue]                 AS [Financial_Dimension_Value]
   FROM [dbo].[DimensionAttributeValueSetItem] AS [FIN_DIM]
 
        INNER JOIN [dbo].[DimensionAttributeValue] AS [ATT_VAL]
@@ -14,5 +15,4 @@ SELECT [FIN_DIM].[DimensionAttributeValueSet]   AS [Financial_Dimension_ID]
               AND [DIM_ATT].[Partition] = [ATT_VAL].[Partition]
 
  ORDER BY [DIM_ATT].[Name] ASC
- 
- 
+
