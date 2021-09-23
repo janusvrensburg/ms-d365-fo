@@ -27,7 +27,7 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
       
       ,NULLIF([CUS].[CreditMax], 0.00)           AS [Credit_Limit]
 
-  FROM [dbo].[CustTableStaging] AS [CUS]
+  FROM [dbo].[CustTable] AS [CUS]
 
        -- CUSTOMER (NAME) LOOKUP
        LEFT JOIN [dbo].[DirPartyTable] AS [CUS_NME]
