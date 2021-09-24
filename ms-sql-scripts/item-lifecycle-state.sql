@@ -3,7 +3,6 @@
 SELECT [ITM].[DataAreaID]                    AS [Company_ID]
 
       ,[ITM].[RecID]                         AS [Item_Record_ID]
-
       ,[ITM].[ItemID]                        AS [Item_Number]
       ,NULLIF([PRD_NME].[Name], '')          AS [Item_Name]
 
