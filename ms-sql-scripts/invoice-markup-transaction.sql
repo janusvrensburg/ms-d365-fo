@@ -25,7 +25,7 @@ SELECT [MRK_TRN].[RecID]              AS [Markup_Record_ID]
                ON [MRK_TRN].[TransRecID]        = [INV_HDR].[RecID]
               AND [MRK_TRN].[Partition]         = [INV_HDR].[Partition]
               AND [MRK_TRN].[DataAreaID]        = [INV_HDR].[DataAreaID]
-              AND [MRK_TRN].[TransTableID]      = 239  -- NEED TO FILTER FOR INVOICE MARKUPS ONLY
+              AND [MRK_TRN].[TransTableID]      = 239  -- FILTER FOR INVOICE MARKUPS ONLY
 
  ORDER BY [INV_HDR].[RecID] ASC
       ,[MRK_TRN].[RecID] ASC;
