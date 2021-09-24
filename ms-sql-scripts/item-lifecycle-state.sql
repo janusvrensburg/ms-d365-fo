@@ -9,7 +9,7 @@ SELECT [ITM].[DataAreaID]                    AS [Company_ID]
 
       ,NULLIF([ITM_LFE].[Description], '')   AS [Item_Lifecycle_State]
 
-  FROM [dbo].[InventTable] AS [ITM] -- ITEM
+  FROM [dbo].[InventTable] AS [ITM]
 
        -- PRODUCT (NAME) LOOKUP
        LEFT JOIN [dbo].[EcoResProductTranslation] AS [PRD_NME]
