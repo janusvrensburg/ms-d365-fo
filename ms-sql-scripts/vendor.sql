@@ -2,6 +2,7 @@
 -- VENDOR
 SELECT [VND].[DataAreaID]                        AS [Company_ID]
 
+      ,[VND].[RecID]                             AS [Vendor_Record_ID]
       ,NULLIF([VND].[AccountNum], '')            AS [Vendor_ID]
       ,NULLIF([VND_NME].[Name], '')              AS [Vendor_Name]
 

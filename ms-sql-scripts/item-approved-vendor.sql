@@ -1,8 +1,8 @@
 
 -- ITEM APPROVED VENDOR
-SELECT [ITM].[RecID]                                     AS [Item_Record_ID]
-      ,[ITM].[DataAreaID]                                AS [Company_ID]
+SELECT [ITM].[DataAreaID]                                AS [Company_ID]
 
+      ,[ITM].[RecID]                                     AS [Item_Record_ID]
       ,NULLIF([ITM].[ItemID], '')                        AS [Item_Number]
       ,NULLIF([PRD].[SearchName], '')                    AS [Item_Search_Name]
       ,NULLIF([PRD_NME].[Name], '')                      AS [Item_Name]
