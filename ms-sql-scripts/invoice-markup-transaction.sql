@@ -1,9 +1,10 @@
 
--- INVOICE MARKUP TRANSACTION
--- RETURNS MARKUPS BASED ON INVOICE HEADERS (SUCH AS ADDITIONAL FREIGHT CHARGES OR SALES TAX)
--- ONE INVOICE (HEADER) CAN HAVE MULTIPLE MARKUPS
--- EXCHANGE RATE ON INVOICE HEADER CAN BE USED FOR MARKUP CURRENCY CONVERSION
--- MARKUP CAN BE SPREAD ACROSS INVOICE LINE ITEMS FOR MORE GRANULAR DETAILS (USING INVOICE LINE ITEM AMOUNT)
+-- Invoice Markup Transaction
+
+    -- Returns Markup Transactions based on Invoice Headers (such as additional freight charges or sales tax)
+    -- One Invoice Header can have multiple Markup Transactions
+    -- Exchange Rate on Invoice Header can be used for Markup currency conversions
+    -- Markup can be spread across Invoice Line Items (using the Invoice Line-Item Amount as the weight)
 
 SELECT [MRK_TRN].[RecID]              AS [Markup_Record_ID]
 
@@ -18,14 +19,14 @@ SELECT [MRK_TRN].[RecID]              AS [Markup_Record_ID]
 	  
       ,[MRK_TRN].[CalculatedAmount]   AS [Markup_Amount]
 
-  FROM [dbo].[CustInvoiceJour] AS [INV_HDR] -- INVOICE HEADER
+  FROM [dbo].[CustInvoiceJour] AS [INV_HDR] -- Invoice Header
   
-       -- MARKUP TRANSACTION LOOKUP (1:M)
+       -- Markup Transaction Lookup (1:M)
        INNER JOIN [dbo].[MarkupTrans] AS [MRK_TRN]
                ON [MRK_TRN].[TransRecID]        = [INV_HDR].[RecID]
               AND [MRK_TRN].[Partition]         = [INV_HDR].[Partition]
               AND [MRK_TRN].[DataAreaID]        = [INV_HDR].[DataAreaID]
-              AND [MRK_TRN].[TransTableID]      = 239  -- FILTER FOR INVOICE MARKUPS ONLY
+              AND [MRK_TRN].[TransTableID]      = 239  -- Filter for Invoice Header Markups only
 
  ORDER BY [INV_HDR].[RecID] ASC
       ,[MRK_TRN].[RecID] ASC;
