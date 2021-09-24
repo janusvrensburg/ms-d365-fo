@@ -1,6 +1,4 @@
 
-<img src="./ms-d365_fo.drawio.svg">
-
 - [Customers](./ms-sql-scripts/customer.sql)
 - [Vendors](./ms-sql-scripts/vendor.sql)
 - [Item (Primary Vendor)](./ms-sql-scripts/item-primary-vendor.sql)
