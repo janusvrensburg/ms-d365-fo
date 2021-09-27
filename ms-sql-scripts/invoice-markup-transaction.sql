@@ -25,10 +25,10 @@ SELECT [INV_HDR].[DataAreaID]         AS [Company_ID]
 
        -- Markup Transaction Lookup (1:M)
        INNER JOIN [dbo].[MarkupTrans] AS [MRK_TRN]
-               ON [MRK_TRN].[TransRecID]        = [INV_HDR].[RecID]
-              AND [MRK_TRN].[Partition]         = [INV_HDR].[Partition]
-              AND [MRK_TRN].[DataAreaID]        = [INV_HDR].[DataAreaID]
-              AND [MRK_TRN].[TransTableID]      = 239  -- Filter for Invoice Header Markups only
+               ON [MRK_TRN].[TransRecID]   = [INV_HDR].[RecID]
+              AND [MRK_TRN].[Partition]    = [INV_HDR].[Partition]
+              AND [MRK_TRN].[DataAreaID]   = [INV_HDR].[DataAreaID]
+              AND [MRK_TRN].[TransTableID] = 239  -- Filter for Invoice Header Markups only
 
  ORDER BY [INV_HDR].[RecID] ASC
       ,[MRK_TRN].[RecID] ASC;
