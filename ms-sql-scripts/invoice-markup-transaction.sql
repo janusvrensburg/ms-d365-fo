@@ -18,11 +18,11 @@ SELECT [INV_HDR].[DataAreaID]         AS [Company_ID]
 
       ,[MRK_TRN].[CurrencyCode]       AS [Currency_Code]
       ,[INV_HDR].[ExchRate]           AS [Exchange_Rate]
-	  
+
       ,[MRK_TRN].[CalculatedAmount]   AS [Markup_Amount]
 
   FROM [dbo].[CustInvoiceJour] AS [INV_HDR] -- Invoice Header
-  
+
        -- Markup Transaction Lookup (1:M)
        INNER JOIN [dbo].[MarkupTrans] AS [MRK_TRN]
                ON [MRK_TRN].[TransRecID]        = [INV_HDR].[RecID]
