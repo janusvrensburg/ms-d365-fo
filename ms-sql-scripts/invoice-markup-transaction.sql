@@ -6,7 +6,9 @@
     -- Exchange Rate on Invoice Header can be used for Markup currency conversions
     -- Markup can be spread across Invoice Line Items (using the Invoice Line-Item Amount as the weight)
 
-SELECT [MRK_TRN].[RecID]              AS [Markup_Record_ID]
+SELECT [INV_HDR].[DataAreaID]         AS [Company_ID]
+
+      ,[MRK_TRN].[RecID]              AS [Markup_Record_ID]
 
       ,[INV_HDR].[RecID]              AS [Invoice_Record_ID]
       ,[INV_HDR].[InvoiceID]          AS [Invoice_Number]
