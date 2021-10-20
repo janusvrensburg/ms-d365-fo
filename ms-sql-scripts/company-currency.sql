@@ -8,7 +8,8 @@ SELECT [CMP].[ID]                   AS [Company_ID]
        INNER JOIN [dbo].[DataArea] AS [CMP]
                ON [CMP].[RecID] = [LGR].[PrimaryForLegalEntity]
 
- ORDER BY 1 ASC
-      ,2 ASC;
+ ORDER BY [CMP].[ID] ASC
+      ,[CMP].[Name] ASC;
 
 GO
+
