@@ -1,5 +1,5 @@
 
-SELECT [EMP].[RecID]                  AS [Employee_Record_ID]
+SELECT [EMP].[RecID]                  AS [Record_ID]
       ,[EMP].[PersonnelNumber]        AS [Personnel_Number]
 
       ,NULLIF([EMP_NME].[Name], '')   AS [Full_Name]
