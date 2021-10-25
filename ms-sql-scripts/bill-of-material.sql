@@ -1,4 +1,5 @@
 
+-- Bill of Materials
 SELECT [BOM_HDR].[DataAreaId]             AS [Company_ID]
       ,[BOM_HDR].[RecId]                  AS [Record_ID]
 
