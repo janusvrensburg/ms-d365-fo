@@ -11,11 +11,12 @@ SELECT [BOM_HDR].[DataAreaId]             AS [Company_ID]
 
   FROM [dbo].[BomTable] AS [BOM_HDR]
 
-       -- BOM Approved By (Name) Lookup
+       -- BOM Approved By Lookup
        LEFT JOIN [dbo].[HcmWorker] AS [BOM_APP]
               ON [BOM_APP].[RecId]     = [BOM_HDR].[Approver]
              AND [BOM_APP].[Partition] = [BOM_HDR].[Partition]
 
+       -- BOM Approved By (Name) Lookup
        LEFT JOIN [dbo].[DirPartyTable] AS [BOM_APP_NME]
               ON [BOM_APP_NME].[RecId]     = [BOM_APP].[Person]
              AND [BOM_APP_NME].[Partition] = [BOM_APP].[Partition]
