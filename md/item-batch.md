@@ -33,6 +33,7 @@ SELECT [INV_ITM].[DataAreaId]                                AS [Company_ID]
              AND [ITM_NME].[Partition]  = [INV_ITM].[Partition]
              AND [ITM_NME].[LanguageId] = 'en-us'
 
+
        -- Item Batch Lookup
        LEFT JOIN [dbo].[InventBatch] AS [INV_BTC]
               ON [INV_BTC].[ItemId]      = [INV_ITM].[ItemId]
