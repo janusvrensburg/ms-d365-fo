@@ -1,10 +1,16 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="770px" height="284px" viewBox="-0.5 -0.5 770 284" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;Ul9G87lPFBKK4TNfLm2L&quot; name=&quot;svg&quot;&gt;7Vtbc9o4FP41PDZj40vgsVDSdobuZpLMbPdRsU+MGiExskigv34lS/IFG2Ia8LaJHWZiHV0s6fu+o2MhBt50ufnM0WrxjcVABkMn3gy8T4Ph8IM3upT/lGWrLaE31oaE41ibnMJwi3+CNrrWusYxpMamTYIxIvAqrdSOGKUQiUpBxDl7rtZ9YKT61BVKoFJCGW4jROrWf3AsFsYaOKX6XwAnC7Gbc4+ix4SzNTUPpIyCzlki244pmi5QzJ5LJm828KacMaHvlpspEDWv1Sm72pOb95kDFW0q+J6nqzwhsjYDNz0TWzsTEMuJMUnGxYIljCIyK6yTbLCg2nRlqigzZ2xljD9AiK1BGa0Fk6aFWBKTK7vLt9/LiX9lwrkIbPKT4pWTp7YmlQrExRUmpJz+qNCXhtmNmnhv8sCouEJLTFStL0CeQOAIqdKPIKKFqSprJiCugeMlCOC3KxRhmqguZQ2zNY9gXy5QS2A370XZIPNNJ/X44qKLP4GzO/YN0W1WkbNHmDLCeDb13shRf2oMsvrf6qHCDh02WHwv3ZcmTKaK+VIJW6dOD8MYPTzDCT80cstmxBIl0EZFhlJVQ6vPwOS88K0swIEggZ+qKkJGjEleLq96zbDszNAxjkPp6CI0JDSu43LkVJsxaOiaZXrvNOaOR+5FUGlr7O60ZXDfbUvelIZVmDIB7ROTXxPTV/ok53qCFM92dSXFv1K3At1nKirTxlNwSdcmEKbADXEiRghapTgrri0LTOI52rK1sA3ZlKTMBuIb7QfdTKTPc9lYarigVGFVrbIRwQmV95Hsr3rihEMq+zJHqTAl2umo6gsIugcyyR2ipTY1ypSstn1IGVETmT2lpICr7DJlS/Zw5l999Jo0k+fsZfsTcAGbgyzOCeSPq1S0Tv65tCZYb74oLweOs5/6FZIdZFTwsnu2NJIDFRiRG7kYIppkjKoSRqETc7a6s7pWhpUiPvCZomlOjdJUG6RE5shVJoEHW/eeCcGWFncz9rzRbNzBRH7kTEyVawpkd6cy7RZp+VHFuYScSiQRzqACSbpnSEUr0rmNUBdifBlsg63XElrvJMiGdV8hYPk1Pg7fLPZBBb6vhs66AV12kuqFbq5rhmp1lxP6QLLVa4HjGGhrkA77Ap3LeAx810tUPcIBfRd6eRn0blC+7PXbhhrlxSg4iZjDTsU8OrTwv2VNH6PNy9YYdgKaX19bNWh32dz30dofF601vjv4nQZsfn1Z7x1+u4DNb792/x8Bm19fyvuA7dUBW66X32VRqK/kvX5/IWA7XsydBmz2rb4E8zVn8ToSb1fNx6hy1Bq9TuAKnBpcs4jdQGpAu+OIpmrbkdE+bvsD4zavIW5r2GgbOk1x22kY5tYY1vv9dnFbLs7XxG2N0J4G2eH7c/UdBG5Be5V3A3OLLzJ7Ab8cuB2v5obA7Yww179im0sM1yiBt/wmdowwvdYAdoNY2OuwEx2OO9VhfTfkL7Tcv2v6rhT4S3saZ8SqxZfIXZ7xyY/xvNEzPiZV6eKrjvi4g5Mf8TEv+JUjPjakO/sRH3ldDP3K69443GF62yM+Q9eX747uOL+q7Y52jw6d8LhP0PCtn4CltPxGrjDfaDi1M7TeYtjgHLPrfHsDYduQ0z+J+6zvFWqYe3xPga8bhG32flxndCZ8w/rmopHx4WN7Pc7HnaQLqgcxm0R8RpDr+3ub94QsZXO16zOoB7OlrR8bzuSI1+BtIMF+xEdh9exk6Da47cs64Nb2OsDr+0E94OcFXALsVoOvMDwX4DJZ/EpCB2/Fz1C82X8=&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="770px" height="284px" viewBox="-0.5 -0.5 770 284" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;Ul9G87lPFBKK4TNfLm2L&quot; name=&quot;svg&quot;&gt;7Vvbcps6FP0aPzYD5hL7sXactjPuOZkkM6d9VEDBNDLyCPnWrz8SkgBZ2FEaTNMGNzNFWxdLWmttNht54E2Xu08ErBZfcQzRYOjEu4F3NRgOP4zcMfuPW/bC4oe+MCQkjYXJqQx36U8ojK6yrtMY5tImTBRjRNNVrvWOcJbBiGoNASF4q/d9xEj/1hVIoNaCG+4igEzrf2lMF9IaOLX+n2GaLOhhzQOInhKC15n8wgxnUNQsgRpHNs0XIMbbmsmbDbwpwZiKq+VuChHfV33Lro/UlnMmMKM2HXzPE102AK3lwuXM6F7tBIzZxsgiJnSBE5wBNKusk2KxkI/pslLVZo7xShp/QEr3EmWwppiZFnSJZC2bLtl/qxe+s4JzEajiFeeVU5b2spRTQOh1ilC9/JGjzwyzW77x3uQRZ/QaLFPEe32GaANpGgHe+gnSaCG7sp4JpDeQpEtIIblbgSjNEj6lYmC8JhE8VgszRWC3nEXdwOrlJMX64mqKPyHB9/gryPZFR4Kf4BQjTIqt90YO/8fXwLr/y7+UqqXDXUq/1a5rG8ZK1X7xgupj0kMyRixPcsIPpdyKHVFECYSRk6HWVdLqE8RsX8ieNSAQAZpudBUBKcakbFd2vcEpm8zQkY6D6+gilCSUruNy5OjDSDREzzq9DwZzxyP3ItDGGrsHY0ncD8diF7VlVaZCQMfE5Bti+pJt2F5PAOfZoa6Y+Ff8koKHQkV12ngcLubaKEgzSCRxIowQWOVp0VxYFimK52CP11QNpEqMMjsY3wo/6BYi3c7ZYLnkAleFUjWvBihNMnYdsfnyb5wQmLO5zEFOZQs7Hem+AIEHiCalQ1TUzqQyGavVHHKM+EYW31JTwHXxkW1rdv9j4Iduk2bKmqNs30BC4e4ki0sC+WOdisrJb2v3BOXNF/XbQegcp75GspOMCp53z4pGbKE0BeiW3QxBlhSM0gnD0YkJXt0rXXPDihMfkhmnaUmN2lZLpGjhyHklgo+q7wOmFC8V7nLt5aDFuoMJ+2M7MeWuKWDTnbKyW5XZH29OGOQZQxKkBVSQkW4Lc2pFumaoKzE+D7bE1rOE1msF2dD0FRQuv8Qvw7eIfUCF76uhU25AtJ3k4kY3Fz1DfndnG/qIirvXIo1jmFmDdNoXiFpMYkgOvYTuEU7ou9LL86B3g/Jlr18batRvRkErYg47FfPo1I3/b9b0MW3q0UUDoJfWgHaCYBj2urTTpYFYo1SP6nLcpS5D0/3eEBxfAQp7SVpgKVTxuyTp95LsRJIlhN3Aaj7SzHarXpK2kjyCZSfY+SZ2Is65L4DoExx/XIKjMd3m2+Y4nFZIZT4J947fLsfh2z/u/o4ch2+GX23kON6MW287ofHcQ1OplDfy0OSbj729cn8hu/FyGXea3VAp8IOnqHVE31/E1oTeyBq9TuAKHDPAjvAtzCVo9wRkOX9Hh7M+YvsDIzavIWJreCs1dJoitnYY5hoM6/2+XcRWivM1EVsjtO0gO3x/rr6D11KBvcq7gdni1E8v4OcDt5eruSFwOyPM5nmUOcNwDRL4Ht9JNQHoWQPYDWL9a6hudNjwGuqMqJp5kH/A8t3nu0/dXJtA/qXsxxlRtTib1eXRWWfwdx+dlSVtiq86OesOWj85K1MB2slZFfyd/eQs+1wMfe3BcHx4CtH25OzQ9dlTpjsuP/q4o8MTuS2eog0aDtNQuGSWN+Q0y5RE225TeYuh6UbD4nO+LEJoG5z6rbhPM6soYO7xbQNfNwhtskSuMzoTvqGZhpQyPn0avsf5ZQfUA/33DU0iPiPIZiZw956QzfCch7ADM+ytJYlUONMS4qNQ/0lC6Da47UsTcGV7HeBm5qgH/LyAM4BdPfhSh1XbB5wVqx8fiuCt+nWnN/sf&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs>
         <clipPath id="mx-clip-86-120-114-30-0">
             <rect x="86" y="120" width="114" height="30"/>
         </clipPath>
         <clipPath id="mx-clip-86-150-114-30-0">
             <rect x="86" y="150" width="114" height="30"/>
+        </clipPath>
+        <clipPath id="mx-clip-86-180-114-30-0">
+            <rect x="86" y="180" width="114" height="30"/>
+        </clipPath>
+        <clipPath id="mx-clip-86-210-114-30-0">
+            <rect x="86" y="210" width="114" height="30"/>
         </clipPath>
         <clipPath id="mx-clip-288-160-114-30-0">
             <rect x="288" y="160" width="114" height="30"/>
@@ -32,13 +38,13 @@
         </clipPath>
     </defs>
     <g>
-        <path d="M 281.62 175 L 250.8 175 Q 240.8 175 240.8 165 L 240.8 145 Q 240.8 135 230.8 135 L 200 135" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 281.62 175 L 250.8 175.02 Q 240.8 175.03 240.8 165.03 L 240.8 145.03 Q 240.8 135.03 230.8 135.02 L 200 135" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="stroke"/>
         <path d="M 275.62 181 L 275.62 169" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="all"/>
-        <ellipse cx="218" cy="135" rx="5" ry="5" fill-opacity="0" fill="#ffffff" stroke="#808080" pointer-events="all"/>
-        <path d="M 200 141 L 212 135 L 200 129" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 200 120 L 200 103.5 Q 200 90 186.5 90 L 93.5 90 Q 80 90 80 103.5 L 80 120" fill="#6e4fa3" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="all"/>
-        <path d="M 80 120 L 80 176.5 Q 80 190 93.5 190 L 186.5 190 Q 200 190 200 176.5 L 200 120" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 80 120 L 200 120" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="218" cy="135.01" rx="5" ry="5" fill-opacity="0" fill="#ffffff" stroke="#808080" pointer-events="all"/>
+        <path d="M 200 141 L 212 135.01 L 200 129" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 200 120 L 200 103.5 Q 200 90 186.5 90 L 93.5 90 Q 80 90 80 103.5 L 80 120" fill="#4a5461" stroke="#4a5461" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 80 120 L 80 236.5 Q 80 250 93.5 250 L 186.5 250 Q 200 250 200 236.5 L 200 120" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 80 120 L 200 120" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
         <g fill="#FFFFFF" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px">
             <text x="139.5" y="109.5">
                 InventBatch
@@ -46,43 +52,58 @@
         </g>
         <path d="M 80 120 M 200 120 M 200 150 M 80 150" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 80 120 M 200 120 M 200 150 M 80 150" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-86-120-114-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-86-120-114-30-0)" font-size="12px">
             <text x="87.5" y="139.5">
                 ItemId
             </text>
         </g>
         <path d="M 80 150 M 200 150 M 200 180 M 80 180" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 80 150 M 200 150 M 200 180 M 80 180" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-86-150-114-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-86-150-114-30-0)" font-size="12px">
             <text x="87.5" y="169.5">
                 InventBatchId
             </text>
         </g>
-        <path d="M 401.62 160 L 401.62 143.5 Q 401.62 130 388.12 130 L 295.12 130 Q 281.62 130 281.62 143.5 L 281.62 160" fill="#6e4fa3" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 281.62 160 L 281.62 216.5 Q 281.62 230 295.12 230 L 388.12 230 Q 401.62 230 401.62 216.5 L 401.62 160" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 281.62 160 L 401.62 160" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 80 180 M 200 180 M 200 210 M 80 210" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 80 180 M 200 180 M 200 210 M 80 210" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="#4A5461" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-86-180-114-30-0)" font-size="12px">
+            <text x="87.5" y="199.5">
+                ProdDate
+            </text>
+        </g>
+        <path d="M 80 210 M 200 210 M 200 240 M 80 240" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 80 210 M 200 210 M 200 240 M 80 240" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="#4A5461" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-86-210-114-30-0)" font-size="12px">
+            <text x="87.5" y="229.5">
+                ExpDate
+            </text>
+        </g>
+        <path d="M 401.62 160 L 401.62 143.5 Q 401.62 130 388.12 130 L 295.12 130 Q 281.62 130 281.62 143.5 L 281.62 160" fill="#4a5461" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 281.62 160 L 281.62 216.5 Q 281.62 230 295.12 230 L 388.12 230 Q 401.62 230 401.62 216.5 L 401.62 160" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 281.62 160 L 401.62 160" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
         <g fill="#FFFFFF" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px">
             <text x="341.12" y="149.5">
                 InventTable
             </text>
         </g>
         <path d="M 281.62 160 M 401.62 160 M 401.62 190 M 281.62 190" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 281.46 158.81 L 401.17 161.8 L 400.56 189.53 L 283.62 190.84" fill="#ffffff" stroke="none" pointer-events="none"/>
         <path d="M 281.62 160 M 401.62 160 M 401.62 190 M 281.62 190" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-288-160-114-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-288-160-114-30-0)" font-size="12px">
             <text x="289.12" y="179.5">
                 ItemId
             </text>
         </g>
         <path d="M 281.62 190 M 401.62 190 M 401.62 220 M 281.62 220" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 281.62 190 M 401.62 190 M 401.62 220 M 281.62 220" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-288-190-114-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-288-190-114-30-0)" font-size="12px">
             <text x="289.12" y="209.5">
                 Product
             </text>
         </g>
-        <path d="M 681.62 120 L 681.62 103.5 Q 681.62 90 668.12 90 L 495.12 90 Q 481.62 90 481.62 103.5 L 481.62 120" fill="#6e4fa3" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 481.62 120 L 481.62 206.5 Q 481.62 220 495.12 220 L 668.12 220 Q 681.62 220 681.62 206.5 L 681.62 120" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 481.62 120 L 681.62 120" fill="none" stroke="#6e4fa3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 681.62 120 L 681.62 103.5 Q 681.62 90 668.12 90 L 495.12 90 Q 481.62 90 481.62 103.5 L 481.62 120" fill="#4a5461" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 481.62 120 L 481.62 206.5 Q 481.62 220 495.12 220 L 668.12 220 Q 681.62 220 681.62 206.5 L 681.62 120" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 481.62 120 L 681.62 120" fill="none" stroke="#4a5461" stroke-miterlimit="10" pointer-events="none"/>
         <g fill="#FFFFFF" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="12px">
             <text x="581.12" y="109.5">
                 EcoResProductTranslation
@@ -90,28 +111,28 @@
         </g>
         <path d="M 481.62 120 M 681.62 120 M 681.62 150 M 481.62 150" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 481.62 120 M 681.62 120 M 681.62 150 M 481.62 150" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-488-120-194-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-488-120-194-30-0)" font-size="12px">
             <text x="489.12" y="139.5">
                 Product
             </text>
         </g>
         <path d="M 481.62 150 M 681.62 150 M 681.62 180 M 481.62 180" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 481.62 150 M 681.62 150 M 681.62 180 M 481.62 180" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-488-150-194-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-488-150-194-30-0)" font-size="12px">
             <text x="489.12" y="169.5">
                 LanguageId
             </text>
         </g>
         <path d="M 481.62 180 M 681.62 180 M 681.62 210 M 481.62 210" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 481.62 180 M 681.62 180 M 681.62 210 M 481.62 210" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
-        <g fill="#6E4FA3" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-488-180-194-30-0)" font-size="12px">
+        <g fill="#4A5461" font-family="Helvetica" font-weight="bold" pointer-events="none" clip-path="url(#mx-clip-488-180-194-30-0)" font-size="12px">
             <text x="489.12" y="199.5">
                 Name
             </text>
         </g>
-        <path d="M 401.62 205 L 431.6 205 Q 441.6 205 441.6 195 L 441.6 145 Q 441.6 135 451.6 135 L 481.62 135" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 401.62 205 L 431.6 205.02 Q 441.6 205.03 441.6 195.03 L 441.6 145.03 Q 441.6 135.03 451.6 135.02 L 481.62 135" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 407.62 199 L 407.62 211" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 469.62 141 L 469.62 129 M 481.62 129 L 469.62 135 L 481.62 141" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 469.62 141.01 L 469.62 129.01 M 481.62 129 L 469.62 135.01 L 481.62 141" fill="none" stroke="#808080" stroke-miterlimit="10" pointer-events="none"/>
         <path d="M 481.62 50 M 681.62 50 M 681.62 90 M 481.62 90" fill="none" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" pointer-events="none"/>
         <g fill="#666666" font-family="Helvetica" font-style="italic" pointer-events="none" clip-path="url(#mx-clip-488-50-194-40-0)" text-anchor="middle" font-size="12px">
             <text x="584.12" y="74.5">
