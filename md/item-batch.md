@@ -20,7 +20,7 @@ High-level overview of entity relationships
 ## SQL
 This will return all Items, along with the Batch Numbers (One Item can have multiple or no Batch Numbers)
 
-``` sql
+```sql
 -- Item Batches
 SELECT [INV_ITM].[DataAreaId]                                AS [Company_ID]
 
