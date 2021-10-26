@@ -7,7 +7,7 @@ High-level overview of entity relationships
 
 <br />
 
-<img src="https://raw.githubusercontent.com/janusvrensburg/ms-d365-fo/main/svg/item-batch.drawio.svg">
+
 
 <br />
 
