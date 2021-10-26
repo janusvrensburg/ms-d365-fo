@@ -20,7 +20,7 @@ High-level overview of entity relationships
 ## SQL
 This will return all Items, along with the Batch Numbers (One Item can have multiple or no Batch Numbers)
 
-```sql
+``` sql
 -- Item Batches
 SELECT [INV_ITM].[DataAreaId]                                AS [Company_ID]
 
@@ -28,8 +28,8 @@ SELECT [INV_ITM].[DataAreaId]                                AS [Company_ID]
       ,NULLIF([ITM_NME].[Name], '')                          AS [Item_Name]
 
       ,NULLIF([INV_BTC].[InventBatchId], '')                 AS [Batch_Number]
-      ,NULLIF([INV_BTC].[ExpDate], '1900-01-01 00:00:00')    AS [Expiration_Date]
       ,NULLIF([INV_BTC].[ProdDate], '1900-01-01 00:00:00')   AS [Manufacturing_Date]
+      ,NULLIF([INV_BTC].[ExpDate], '1900-01-01 00:00:00')    AS [Expiration_Date]
 
   FROM [dbo].[InventTable] AS [INV_ITM] -- Item
 
