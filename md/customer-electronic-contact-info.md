@@ -1,9 +1,8 @@
-# Item Batch
+# Customer Electronic Contact Information
 
 <br />
 
 ## Entity Relationship
-High-level overview of entity relationships
 
 <br />
 

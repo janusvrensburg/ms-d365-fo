@@ -3,7 +3,6 @@
 <br />
 
 ## Entity Relationship
-High-level overview of entity relationships
 
 <br />
 
@@ -12,9 +11,8 @@ High-level overview of entity relationships
 <br />
 
 ## SQL
-This will return all Items, along with the Batch Numbers (One Item can have multiple or no Batch Numbers)
 
-```
+```sql
 -- Item Batches
 SELECT [INV_ITM].[DataAreaId]                                AS [Company_ID]
 
