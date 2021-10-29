@@ -7,8 +7,6 @@
 <br />
 
 ```sql
-
-
 SELECT [CMP].[Id]                                                 AS [Company_ID]
       ,[CMP].[Name]                                               AS [Company_Name]
 
@@ -30,8 +28,8 @@ SELECT [CMP].[Id]                                                 AS [Company_ID
   FROM [dbo].[GeneralJournalEntry] AS [GL_JRN]
 
        INNER JOIN [dbo].[GeneralJournalAccountEntry] AS [GL_JRN_ACC]
-               ON [GL_JRN].[RecId]     = [GL_JRN_ACC].[GeneralJournalEntry]
-              AND [GL_JRN].[Partition] = [GL_JRN].[Partition]
+               ON [GL_JRN_ACC].[GeneralJournalEntry] = [GL_JRN].[RecId]
+              AND [GL_JRN_ACC].[Partition]           = [GL_JRN].[Partition]
 
        INNER JOIN [dbo].[MainAccount] AS [LGR_ACC]
                ON [LGR_ACC].[RecId]     = [GL_JRN_ACC].[MainAccount]
@@ -55,5 +53,5 @@ SELECT [CMP].[Id]                                                 AS [Company_ID
 
  ORDER BY [CMP].[Id] ASC
       ,[LGR_ACC].[MainAccountId] ASC
-      ,[CAL].[EndDate] ASC;
+      ,[CAL].[EndDate] ASC
 ```
