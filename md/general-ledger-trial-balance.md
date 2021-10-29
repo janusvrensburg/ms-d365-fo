@@ -53,5 +53,5 @@ SELECT [CMP].[Id]                                                 AS [Company_ID
 
  ORDER BY [CMP].[Id] ASC
       ,[LGR_ACC].[MainAccountId] ASC
-      ,[CAL].[EndDate] ASC
+      ,[CAL].[EndDate] ASC;
 ```
