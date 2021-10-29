@@ -19,12 +19,12 @@ SELECT [CMP].[Id]                                                 AS [Company_ID
 
       ,SUM(CASE WHEN [GL_JRN_ACC].[IsCredit] = 0	
                 THEN [GL_JRN_ACC].[ReportingCurrencyAmount]	
-                ELSE NULL * 1
+                ELSE NULL
                 END)                                              AS [Debit_Amount]
 	
       ,SUM(CASE WHEN [GL_JRN_ACC].[IsCredit] = 1	
                 THEN (- [GL_JRN_ACC].[ReportingCurrencyAmount])	
-                ELSE NULL * 1
+                ELSE NULL
                 END)                                              AS [Credit_Amount]
 
   FROM [dbo].[GeneralJournalEntry] AS [GL_JRN]
