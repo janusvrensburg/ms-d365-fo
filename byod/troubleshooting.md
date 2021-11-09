@@ -111,7 +111,8 @@ Ensure that the specific Data Entity is published, then enable Change Tracking. 
 The following error message is raised on the Batch Export execution log:
 
 ```
-The required data encryption certificate was not found when trying to edit the Source data formats table and the EntityStoreConnectionString field. 
+The required data encryption certificate was not found when trying to edit the Source data formats table 
+and the EntityStoreConnectionString field.
 Please add a valid certificate. 
 Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception:
 Microsoft.Dynamics.AX.Configuration.CertificateHandler.NoCertificateFoundException: No certificate found for id.
@@ -132,7 +133,7 @@ Navigate to **Data Management** under the **System Administration** module, and 
 Below is a sample connection string that can be used:
 
 ```
-Data Source=SAMPLE-SQL-INSTANCE.database.windows.net;Initial Catalog=SAMPLE-SQL-DATABASE;Integrated Security=False;User ID=SAMPLE-USERNAME;Password=SAMPLE-PASSWORD;TrustServerCertificate=False;
+Data Source=;Initial Catalog=;Integrated Security=False;User ID=;Password=;TrustServerCertificate=False;
 ```
 
 <br />
