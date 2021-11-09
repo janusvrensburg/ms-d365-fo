@@ -11,7 +11,7 @@
 <br />
 
 ```
-Unable to determine default value for column (x)
+Unable to determine default value for column
 The column might be assigned a disabled configuration key. Please remove this column from the project mapping.
 ```
 
