@@ -27,13 +27,13 @@ The column might be assigned a disabled configuration key. Please remove this co
 
 <br />
 
-**Root Cause:**
+### Root Cause
 
 Data Entity cannot be exported due to disabled configuration key assigned to field within the specific Data Entity.
 
 <br />
 
-**Resolution:**
+### Resolution
 
 There are two options:
 
@@ -42,7 +42,7 @@ There are two options:
 
 <br />
 
-**External Resources:**
+### External Resources
 
 - [Configuration Keys and Data Entities (Microsoft Docs)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/config-key-entities)
 - [Effect of Disabling a Table or Column (Microsoft Docs)](https://docs.microsoft.com/en-us/dynamicsax-2012/developer/effect-of-disabling-a-table-or-column)
@@ -63,7 +63,7 @@ There are two options:
 
 <br />
 
-**Symptom:**
+### Symptom
 
 The following error message is raised on the Batch Export execution log:
 
@@ -76,19 +76,19 @@ Object Server Azure:
 
 <br />
 
-**Root Cause:**
+### Root Cause
 
 Data Entity cannot be exported because Change Tracking is not enabled; Change Tracking needs to be enabled to export Data Entities incrementally. Please note that Change Tracking does not need to be enabled on Data Entities that are exported in full.
 
 <br />
 
-**Resolution:**
+### Resolution
 
 Ensure that the specific Data Entity is published, then enable Change Tracking. If the Data Entity is published and states that Change Tracking is already enabled; disable the Change Tracking and reenable again. If the problem still persists - Disable the Change Tracking, drop the Data Entity, republish and reenable Change Tracking.
 
 <br />
 
-**External Resources:**
+### External Resources
 
 - [Enable Change Tracking for Entities (Microsoft Docs)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track)
 
@@ -106,7 +106,7 @@ Ensure that the specific Data Entity is published, then enable Change Tracking. 
 
 <br />
 
-**Symptom:**
+### Symptom
 
 The following error message is raised on the Batch Export execution log:
 
@@ -120,13 +120,13 @@ Microsoft.Dynamics.AX.Configuration.CertificateHandler.NoCertificateFoundExcepti
 
 <br />
 
-**Root Cause:**
+### Root Cause
 
 The connection to the Entity Export Database cannot be established.
 
 <br />
 
-**Resolution:**
+### Resolution
 
 Navigate to **Data Management** under the **System Administration** module, and select **Configure Entity Export to Database**. Select the appropriate source and validate the connection string.
 
@@ -138,6 +138,6 @@ Data Source=;Initial Catalog=;Integrated Security=False;User ID=;Password=;Trust
 
 <br />
 
-**External Resources:**
+### External Resources
 
 - [Bring Your Own Database (Microsoft Docs)](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database)
