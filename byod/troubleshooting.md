@@ -16,7 +16,7 @@
 
 <br />
 
-**Symptom:**
+### Symptom
 
 The following error message is raised on the Batch Export execution log:
 
