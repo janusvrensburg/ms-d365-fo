@@ -16,18 +16,29 @@
 
 <br />
 
-**Error Message:**
+**Symptom:**
 
 ```
+Error Message:
+
 Unable to determine default value for column
 The column might be assigned a disabled configuration key. Please remove this column from the project mapping.
 ```
 
 <br />
 
-**Description:**
+**Root Cause:**
 
-Data entity cannot be exported due to disabled configuration key assigned to field within the specific data entity. The field can be removed from the mapping (therefore the field will be excluded from the export) or configuration key needs to be reenabled on the field.
+Data Entity cannot be exported due to disabled configuration key assigned to field within the specific Data Entity.
+
+<br />
+
+**Resolution:**
+
+There are two options:
+
+1. The field can be removed from the mapping (therefore the field will be excluded from the export)
+2. Configuration key needs to be reenabled on the field (therefore the field will be included in the export)
 
 <br />
 
@@ -52,9 +63,11 @@ Data entity cannot be exported due to disabled configuration key assigned to fie
 
 <br />
 
-**Error Message:**
+**Symptom:**
 
 ```
+Error Message:
+
 Cannot select a record in  ().
 The SQL database has issued an error.
 Object Server Azure:
@@ -63,9 +76,15 @@ Object Server Azure:
 
 <br />
 
-**Description:**
+**Root Cause:**
 
-Data Entity cannot be exported because Change Tracking is not enabled. Change Tracking needs to be enabled to export Data Entities incrementally. Change Tracking does not need to be enabled on Data Entities that are exported in full. Ensure that the specific Data Entity is published, then enable Change Tracking. If the Data Entity is published and states that Change Tracking is already enabled; disable the Change Tracking and reenable again.
+Data Entity cannot be exported because Change Tracking is not enabled; Change Tracking needs to be enabled to export Data Entities incrementally. Please note that Change Tracking does not need to be enabled on Data Entities that are exported in full.
+
+<br />
+
+**Resolution:**
+
+Ensure that the specific Data Entity is published, then enable Change Tracking. If the Data Entity is published and states that Change Tracking is already enabled; disable the Change Tracking and reenable again. If the problem still persists - Disable the Change Tracking, drop the Data Entity, republish and reenable Change Tracking.
 
 <br />
 
