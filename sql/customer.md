@@ -12,19 +12,17 @@
       
       
 ## Customers
-      
-<br />
-      
+ 
 This query will return the unique list of customers
    
 <br />
 
 ``` SQL
-SELECT [CUS].[DataAreaID]                        AS [Company_ID]
+SELECT [CUS].[DataAreaID]             AS [Company_ID]
 
-      ,[CUS].[RecID]                             AS [Customer_Record_ID]
-      ,[CUS].[AccountNum]                        AS [Customer_ID]
-      ,NULLIF([CUS_NME].[Name], '')              AS [Customer_Name]
+      ,[CUS].[RecID]                  AS [Customer_Record_ID]
+      ,[CUS].[AccountNum]             AS [Customer_ID]
+      ,NULLIF([CUS_NME].[Name], '')   AS [Customer_Name]
 
   FROM [dbo].[CustTable] AS [CUS]
 
@@ -49,8 +47,6 @@ SELECT [CUS].[DataAreaID]                        AS [Company_ID]
 
 
 ## Customer Organization
-      
-<br />
       
 This query will return the unique list of customers along with the Organization Number
    
