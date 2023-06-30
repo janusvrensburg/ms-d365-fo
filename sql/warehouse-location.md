@@ -22,7 +22,7 @@ SELECT [WMS_LOC].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Warehouse Location Type Enumeration Lookup (LocationType)
+## Warehouse Location Type (LocationType)
 
 <br />
 
