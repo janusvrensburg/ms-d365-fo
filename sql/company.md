@@ -1,5 +1,5 @@
 
-```
+``` SQL
 SELECT [CMP].[RecId]   AS [CompanyKey]
       ,[CMP].[Id]      AS [CompanyID]
       ,[CMP].[Name]    AS [CompanyName]
