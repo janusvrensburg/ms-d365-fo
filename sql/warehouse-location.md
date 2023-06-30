@@ -75,7 +75,7 @@ SELECT DISTINCT [WMS_LOC].[DataAreaId]            AS [CompanyID]
              WHEN '4' THEN 'ProductionInput'
              WHEN '5' THEN 'InspectionLocation'
              WHEN '6' THEN 'KanbanSupermarket'
-        END)                                      AS [WarehouseLocationTypeLabel]
+        END)                                      AS [WarehouseLocationType]
 
   FROM [dbo].[WMSLocation] AS [WMS_LOC]
 ```
