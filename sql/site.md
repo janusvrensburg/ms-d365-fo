@@ -1,6 +1,6 @@
 # Site
 
-<br\>
+<br/>
 
 ``` sql
 SELECT [INV_STE].[DataAreaId]   AS [CompanyID]
