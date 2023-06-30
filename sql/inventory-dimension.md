@@ -16,7 +16,7 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
       ,NULLIF([INV_DIM].[WMSLocationId], '')      AS [WarehouseLocationID]
       ,NULLIF([INV_DIM].[WMSPalletId], '')        AS [PalletID]
 
-  FROM [dbo].[InventDim] AS [INV_DIM];
+  FROM [dbo].[InventDim] AS [INV_DIM]
 ```
 
 <br />
