@@ -4,6 +4,7 @@
 
 ``` sql
 SELECT [INV_STE].[DataAreaId]                     AS [CompanyID]
+
       ,[INV_STE].[RecId]                          AS [SiteKey]
 
       ,NULLIF([INV_STE].[SiteId], '')             AS [SiteID]
