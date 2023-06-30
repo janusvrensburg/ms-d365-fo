@@ -46,6 +46,6 @@ SELECT DISTINCT [WMS_LOC].[DataAreaId]            AS [CompanyID]
 
 <br />
 
-> Enumerations can be customized, please review before implementing.
+> Enumerations can be customized; please review before implementing.
 
 <br />
