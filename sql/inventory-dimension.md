@@ -1,3 +1,7 @@
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
 # Inventory Dimension (InventDim)
 
 <br />
@@ -21,7 +25,25 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Site Lookup (InventSite)
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Lookups
+
+<br />
+
+### Site Lookup (InventSite)
 
 <br />
 
@@ -40,7 +62,21 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Warehouse Lookup (InventLocation)
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+### Warehouse Lookup (InventLocation)
 
 <br />
 
@@ -56,9 +92,24 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
               ON [INV_LOC].[DataAreaId] = [INV_DIM].[DataAreaId]
              AND [INV_LOC].[InventLocationId] = [INV_DIM].[InventLocationId]
 ```
+
 <br />
 
-## Warehouse Location Lookup (WMSLocation)
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+### Warehouse Location Lookup (WMSLocation)
 
 <br />
 
@@ -79,3 +130,13 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
               ON [WMS_LOC].[DataAreaId] = [INV_DIM].[DataAreaId]
              AND [WMS_LOC].[WMSLocationId] = [INV_DIM].[WMSLocationId]
 ```
+
+<br />
+
+---
+
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
