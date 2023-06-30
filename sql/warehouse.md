@@ -37,7 +37,19 @@ SELECT [INV_LOC].[DataAreaId]                     AS [CompanyID]
 
 ## Lookups
 
-<br />
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<!-- <div style="page-break-after: always">  -->
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
 
 ### Site Lookup (InventSite)
 
