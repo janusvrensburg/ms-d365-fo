@@ -4,7 +4,6 @@
 
 ``` sql
 
-
 SELECT [ITM].[DataAreaId]                                                    AS [CompanyID]
 
       ,CONVERT(BIGINT, [ITM].[RecId])                                        AS [ItemKey]
