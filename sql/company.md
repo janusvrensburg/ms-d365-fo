@@ -1,3 +1,6 @@
+# Company (Data Area)
+
+<br />
 
 ``` sql
 SELECT [CMP].[RecId]    AS [CompanyKey]
