@@ -1,4 +1,4 @@
-# Inventory Dimension
+# Inventory Dimension (InventDim)
 
 <br />
 
@@ -21,7 +21,7 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Site Lookup
+## Site Lookup (InventSite)
 
 <br />
 
@@ -40,7 +40,7 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Warehouse Lookup
+## Warehouse Lookup (InventLocation)
 
 <br />
 
@@ -58,7 +58,7 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 ```
 <br />
 
-## Warehouse Location Lookup
+## Warehouse Location Lookup (WMSLocation)
 
 <br />
 
