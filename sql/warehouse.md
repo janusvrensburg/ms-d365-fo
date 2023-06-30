@@ -1,4 +1,4 @@
-# Warehouse
+# Warehouse (InventLocation)
 
 <br />
 
@@ -17,7 +17,7 @@ SELECT [INV_LOC].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Site Lookup
+## Site Lookup (InventSite)
 
 <br />
 
