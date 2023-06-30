@@ -37,6 +37,8 @@ SELECT [INV_LOC].[DataAreaId]                     AS [CompanyID]
 
 ## Lookups
 
+<br />
+
 <!---------------------->
 <!--- Page / Section --->
 <!---------------------->
