@@ -25,10 +25,6 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
----
-
-<br />
-
 <!---------------------->
 <!--- Page / Section --->
 <!---------------------->
@@ -46,6 +42,20 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 ## Lookups
 
 <br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<!-- <div style="page-break-after: always">  -->
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
 
 ### Site Lookup (InventSite)
 
@@ -134,10 +144,6 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
               ON [WMS_LOC].[DataAreaId] = [INV_DIM].[DataAreaId]
              AND [WMS_LOC].[WMSLocationId] = [INV_DIM].[WMSLocationId]
 ```
-
-<br />
-
----
 
 <br />
 
