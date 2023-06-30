@@ -65,9 +65,13 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 ``` sql
 SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
-      ,NULLIF([WMS_LOC].[WMSLocationId], '')      AS [WarehouseLocationID]
+      ,NULLIF([WMS_LOC].[LocationType], '')       AS [WarehouseLocationType] -- Enumeration
 
       ,NULLIF([WMS_LOC].[ZoneId], '')             AS [ZoneID]
+
+      ,NULLIF([WMS_LOC].[Height], 0.00)           AS [Height]
+      ,NULLIF([WMS_LOC].[Width], 0.00)            AS [Width]
+      ,NULLIF([WMS_LOC].[Depth], 0.00)            AS [Depth]
 
   FROM [dbo].[InventDim] AS [INV_DIM]
 
