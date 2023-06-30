@@ -1,3 +1,7 @@
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
 # Warehouse (InventLocation)
 
 <br />
@@ -17,7 +21,25 @@ SELECT [INV_LOC].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Site Lookup (InventSite)
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Lookups
+
+<br />
+
+### Site Lookup (InventSite)
 
 <br />
 
@@ -33,3 +55,9 @@ SELECT [INV_LOC].[DataAreaId]                     AS [CompanyID]
               ON [INV_STE].[DataAreaId] = [INV_LOC].[DataAreaId]
              AND [INV_STE].[SiteId] = [INV_LOC].[InventSiteId]
 ```
+
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
