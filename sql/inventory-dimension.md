@@ -26,9 +26,11 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 <br />
 
 ``` sql
-SELECT [INV_DIM].[DataAreaId]     AS [CompanyID]
-      ,[INV_DIM].[InventSiteId]   AS [SiteID]
-      ,[INV_STE].[Name]           AS [SiteName]
+SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
+
+      ,NULLIF([INV_DIM].[InventSiteId], '')       AS [SiteID]
+      ,NULLIF([INV_STE].[Name], '')               AS [SiteName]
+
   FROM [dbo].[InventDim] AS [INV_DIM]
 
        LEFT JOIN [dbo].[InventSite] AS [INV_STE]
