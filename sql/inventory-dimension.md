@@ -37,3 +37,22 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
               ON [INV_STE].[DataAreaId] = [INV_DIM].[DataAreaId]
              AND [INV_STE].[SiteId] = [INV_DIM].[InventSiteId]
 ```
+
+<br />
+
+## Warehouse Lookup
+
+<br />
+
+``` sql
+SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
+
+      ,NULLIF([INV_DIM].[InventLocationId], '')   AS [WarehouseID]
+      ,NULLIF([INV_LOC].[Name], '')               AS [WarehouseName]
+
+  FROM [dbo].[InventDim] AS [INV_DIM]
+
+       LEFT JOIN [dbo].[InventLocation] AS [INV_LOC]
+              ON [INV_LOC].[DataAreaId] = [INV_DIM].[DataAreaId]
+             AND [INV_LOC].[InventLocationId] = [INV_DIM].[InventLocationId]
+```
