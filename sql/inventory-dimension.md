@@ -25,6 +25,10 @@ SELECT [INV_DIM].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
+---
+
+<br />
+
 <!---------------------->
 <!--- Page / Section --->
 <!---------------------->
