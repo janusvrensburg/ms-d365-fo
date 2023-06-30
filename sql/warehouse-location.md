@@ -1,3 +1,7 @@
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
 # Warehouse Location (WMSLocation)
 
 <br />
@@ -22,7 +26,39 @@ SELECT [WMS_LOC].[DataAreaId]                     AS [CompanyID]
 
 <br />
 
-## Warehouse Location Type (LocationType)
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Enumerations
+
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<!-- <div style="page-break-after: always">  -->
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+### Warehouse Location Type (LocationType)
 
 <br />
 
@@ -45,6 +81,10 @@ SELECT DISTINCT [WMS_LOC].[DataAreaId]            AS [CompanyID]
 ```
 
 <br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
 
 > Enumerations can be customized; please review before implementing.
 
