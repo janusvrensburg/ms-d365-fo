@@ -23,6 +23,8 @@ SELECT [WMS_LOC].[DataAreaId]                     AS [CompanyID]
 
 ## Warehouse Location Type Enumeration
 
+<br />
+
 ``` sql
 SELECT DISTINCT [WMS_LOC].[DataAreaId]            AS [CompanyID]
 
@@ -40,3 +42,9 @@ SELECT DISTINCT [WMS_LOC].[DataAreaId]            AS [CompanyID]
 
   FROM [dbo].[WMSLocation] AS [WMS_LOC]
 ```
+
+<br />
+
+> Enumerations can be customized, please review before implementing.
+
+<br />
