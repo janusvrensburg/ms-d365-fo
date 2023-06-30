@@ -8,13 +8,14 @@ SELECT [WMS_LOC].[DataAreaId]                     AS [CompanyID]
       ,[WMS_LOC].[RecId]                          AS [WarehouseLocationKey]
 
       ,NULLIF([WMS_LOC].[WMSLocationId], '')      AS [WarehouseLocationID]
+
       ,NULLIF([WMS_LOC].[LocationType], '')       AS [WarehouseLocationType] -- Enumeration
+
+      ,NULLIF([WMS_LOC].[ZoneId], '')             AS [ZoneID]
 
       ,NULLIF([WMS_LOC].[Height], 0.00)           AS [Height]
       ,NULLIF([WMS_LOC].[Width], 0.00)            AS [Width]
       ,NULLIF([WMS_LOC].[Depth], 0.00)            AS [Depth]
-
-      ,NULLIF([WMS_LOC].[ZoneId], '')             AS [ZoneID]
 
   FROM [dbo].[WMSLocation] AS [WMS_LOC]
 ```
