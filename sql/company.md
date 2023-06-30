@@ -1,4 +1,4 @@
-# Company (Data Area)
+# Company (DataArea)
 
 <br />
 
@@ -22,8 +22,8 @@ SELECT [CMP].[Id]                                 AS [CompanyID]
 
   FROM [dbo].[DataArea] AS [CMP]
 
-       INNER JOIN [dbo].[Ledger] AS [LGR]
-               ON [LGR].[PrimaryForLegalEntity] = [CMP].[RecId]
+       LEFT JOIN [dbo].[Ledger] AS [LGR]
+              ON [LGR].[PrimaryForLegalEntity] = [CMP].[RecId]
 ```
 
 <br />
