@@ -6,7 +6,7 @@
 
 <br />
 
-``` sql
+```
 SELECT [RTE].[DataAreaId]
       ,[RTE].[RouteId]
 
