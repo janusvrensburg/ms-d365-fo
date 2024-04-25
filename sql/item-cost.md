@@ -47,14 +47,6 @@ SELECT [ITM_MOD].[DataAreaId]
 ```
 
 <br />
-
-Module Types:
-
-- Sales
-- Inventory
-- Purchase
-
-<br />
 <br />
 <br />
 
