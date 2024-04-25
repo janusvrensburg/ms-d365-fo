@@ -2,7 +2,7 @@
 <!--- Page / Section --->
 <!---------------------->
 
-# Cost of Goods Sold
+# Cost of Goods Sold (COGS)
 
 <br />
 <br />
