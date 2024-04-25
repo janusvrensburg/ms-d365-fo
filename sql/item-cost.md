@@ -37,6 +37,17 @@ SELECT [ITM_MOD].[DataAreaId]
 
 <br />
 
+```
+| DataAreaId | ItemId  | ModuleType | PriceDate | Price |
+| ---------- | ------- | ---------- | --------- | ----- |
+| LE01       | ITM0001 | Sales      | 01-Jan    | 5.00  |
+| LE01       | ITM0001 | Sales      | 23-Mar    | 5.50  |
+| LE01       | ITM0001 | Inventory  | 01-Jan    | 5.00  |
+| LE01       | ITM0001 | Purchase   | 01-Jan    | 4.80  |
+```
+
+<br />
+
 Module Types:
 
 - Sales
