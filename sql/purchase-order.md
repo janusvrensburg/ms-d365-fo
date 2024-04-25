@@ -166,3 +166,42 @@ SELECT [PUR].[DataAreaId] AS [DataAreaId]
 <!---------------------->
 <!--- Page / Section --->
 <!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Purchase Pool Lookup
+ 
+This query will return the unique list of purchase order headers along with the purchase pool.
+   
+<br />
+
+``` SQL
+SELECT [PUR].[DataAreaId] AS [DataAreaId]
+      ,[PUR].[RecId] AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId] AS [PurchaseOrderId]
+
+      ,[PUR].[PurchPoolId] AS [PurchasePoolId]
+      ,[PUR_POOL].[Name] AS [PurchasePoolName]
+
+  FROM [dbo].[PurchTable] AS [PUR]
+
+       LEFT JOIN [dbo].[PurchPool] AS [PUR_POOL]
+              ON [PUR_POOL].[PurchPoolId] = [PUR].[PurchPoolId]
+             AND [PUR_POOL].[DataAreaId] = [PUR].[DataAreaId];
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
