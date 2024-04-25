@@ -29,12 +29,12 @@ This query will return the unique list of purchase order headers.
 <br />
 
 ``` SQL
-SELECT [PUR].[DataAreaId]      AS [DataAreaId]
-      ,[PUR].[PurchId]         AS [PurchaseOrderId]
-      ,[PUR].[PurchName]       AS [PurchaseOrderName]
-      ,[PUR].[PurchStatus]     AS [PurchaseOrderStatus]
-      ,[PUR].[DocumentState]   AS [ApprovalStatus]
-      ,[PUR].[OrderAccount]    AS [VendorId]
+SELECT [PUR].[DataAreaId] AS [DataAreaId]
+      ,[PUR].[PurchId] AS [PurchaseOrderId]
+      ,[PUR].[PurchName] AS [PurchaseOrderName]
+      ,[PUR].[PurchStatus] AS [PurchaseOrderStatus]
+      ,[PUR].[DocumentState] AS [ApprovalStatus]
+      ,[PUR].[OrderAccount] AS [VendorId]
   FROM [dbo].[PurchTable] AS [PUR];
 ```
 
@@ -63,12 +63,12 @@ This query will return the unique list of purchase order headers along with the 
 <br />
 
 ``` SQL
-SELECT [PUR].[DataAreaId]      AS [DataAreaId]
-      ,[PUR].[RecId]           AS [PurchaseOrderRecId]
-      ,[PUR].[PurchId]         AS [PurchaseOrderId]
+SELECT [PUR].[DataAreaId] AS [DataAreaId]
+      ,[PUR].[RecId] AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId] AS [PurchaseOrderId]
 
-      ,[VND].[RecId]           AS [VendorRecId]
-      ,[VND_NME].[Name]        AS [VendorName]
+      ,[VND].[RecId] AS [VendorRecId]
+      ,[VND_NME].[Name] AS [VendorName]
 
   FROM [dbo].[PurchTable] AS [PUR]
 
@@ -106,12 +106,12 @@ This query will return the unique list of purchase order headers along with the 
 <br />
 
 ``` SQL
-SELECT [PUR].[DataAreaId]        AS [DataAreaId]
-      ,[PUR].[RecId]             AS [PurchaseOrderRecId]
-      ,[PUR].[PurchId]           AS [PurchaseOrderId]
+SELECT [PUR].[DataAreaId] AS [DataAreaId]
+      ,[PUR].[RecId] AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId] AS [PurchaseOrderId]
 
-      ,[PUR].[Payment]           AS [PaymentTermId]
-      ,[PAY_TRM].[Description]   AS [PaymentTermName]
+      ,[PUR].[Payment] AS [PaymentTermId]
+      ,[PAY_TRM].[Description] AS [PaymentTermName]
 
   FROM [dbo].[PurchTable] AS [PUR]
 
@@ -145,12 +145,12 @@ This query will return the unique list of purchase order headers along with the 
 <br />
 
 ``` SQL
-SELECT [PUR].[DataAreaId]     AS [DataAreaId]
-      ,[PUR].[RecId]          AS [PurchaseOrderRecId]
-      ,[PUR].[PurchId]        AS [PurchaseOrderId]
+SELECT [PUR].[DataAreaId] AS [DataAreaId]
+      ,[PUR].[RecId] AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId] AS [PurchaseOrderId]
 
-      ,[PUR].[InventSiteId]   AS [SiteId]
-      ,[INV_STE].[Name]       AS [SiteName]
+      ,[PUR].[InventSiteId] AS [SiteId]
+      ,[INV_STE].[Name] AS [SiteName]
 
   FROM [dbo].[PurchTable] AS [PUR]
 
