@@ -24,7 +24,7 @@
 
 ## Purchase Order Header
  
-This query will return the unique list of customers
+This query will return the unique list of purchase order headers.
    
 <br />
 
@@ -35,7 +35,7 @@ SELECT [PUR].[DataAreaId]      AS [DataAreaId]
       ,[PUR].[PurchStatus]     AS [PurchaseOrderStatus]
       ,[PUR].[DocumentState]   AS [ApprovalStatus]
       ,[PUR].[OrderAccount]    AS [VendorId]
-  FROM [dbo].[PurchTable] AS [PUR]
+  FROM [dbo].[PurchTable] AS [PUR];
 ```
 
 <br />
@@ -56,39 +56,113 @@ SELECT [PUR].[DataAreaId]      AS [DataAreaId]
 <!--- Page / Section --->
 <!---------------------->
 
-
-## Customer Organization
-      
-This query will return the unique list of customers along with the Organization Number
+## Vendor Lookup
+ 
+This query will return the unique list of purchase order headers along with the vendor details.
    
 <br />
 
 ``` SQL
-SELECT [CUS].[DataAreaID]                  AS [Company_ID]
+SELECT [PUR].[DataAreaId]      AS [DataAreaId]
+      ,[PUR].[RecId]           AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId]         AS [PurchaseOrderId]
 
-      ,[CUS].[RecID]                       AS [Customer_Record_ID]
-      ,[CUS].[AccountNum]                  AS [Customer_ID]
-      ,NULLIF([CUS_NME].[Name], '')        AS [Customer_Name]
+      ,[VND].[RecId]           AS [VendorRecId]
+      ,[VND_NME].[Name]        AS [VendorName]
 
-      ,NULLIF([CUS_ORG].[OrgNumber], '')   AS [Organization_Number]
+  FROM [dbo].[PurchTable] AS [PUR]
 
-  FROM [dbo].[CustTable] AS [CUS]
+       LEFT JOIN [dbo].[VendTable] AS [VND]
+              ON [VND].[AccountNum] = [PUR].[OrderAccount]
+             AND [VND].[DataAreaId] = [PUR].[DataAreaId]
 
-       -- Customer Name Lookup
-       LEFT JOIN [dbo].[DirPartyTable] AS [CUS_NME]
-              ON [CUS_NME].[RecID]     = [CUS].[Party]
-             AND [CUS_NME].[Partition] = [CUS].[Partition]
-
-       -- Customer Organization Lookup
-       LEFT JOIN [dbo].[DirOrganization] AS [CUS_ORG]
-              ON [CUS_ORG].[PartyNumber] = [CUS_NME].[PartyNumber]
-             AND [CUS_ORG].[Partition]   = [CUS_NME].[Partition]
-
- ORDER BY [CUS].[DataAreaID] ASC
-      ,[CUS].[AccountNum] ASC;
-
+       LEFT JOIN [dbo].[DirPartyTable] AS [VND_NME]
+              ON [VND_NME].[RecId] = [VND].[Party]
+             AND [VND_NME].[LanguageId] = 'en-US';
 ```
 
 <br />
 <br />
 <br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Payment Term Lookup
+ 
+This query will return the unique list of purchase order headers along with the payment terms.
+   
+<br />
+
+``` SQL
+SELECT [PUR].[DataAreaId]        AS [DataAreaId]
+      ,[PUR].[RecId]             AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId]           AS [PurchaseOrderId]
+
+      ,[PUR].[Payment]           AS [PaymentTermId]
+      ,[PAY_TRM].[Description]   AS [PaymentTermName]
+
+  FROM [dbo].[PurchTable] AS [PUR]
+
+       LEFT JOIN [dbo].[PaymTerm] AS [PAY_TRM]
+              ON [PAY_TRM].[PaymTermId] = [PUR].[Payment]
+             AND [PAY_TRM].[DataAreaId] = [PUR].[DataAreaId];
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Site Lookup
+ 
+This query will return the unique list of purchase order headers along with the site.
+   
+<br />
+
+``` SQL
+SELECT [PUR].[DataAreaId]     AS [DataAreaId]
+      ,[PUR].[RecId]          AS [PurchaseOrderRecId]
+      ,[PUR].[PurchId]        AS [PurchaseOrderId]
+
+      ,[PUR].[InventSiteId]   AS [SiteId]
+      ,[INV_STE].[Name]       AS [SiteName]
+
+  FROM [dbo].[PurchTable] AS [PUR]
+
+       LEFT JOIN [dbo].[InventSite] AS [INV_STE]
+              ON [INV_STE].[SiteId] = [PUR].[InventSiteId]
+             AND [INV_STE].[DataAreaId] = [PUR].[DataAreaId];
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
