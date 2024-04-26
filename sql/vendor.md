@@ -1,5 +1,33 @@
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
 
--- Vendor
+# Vendor
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Draft
+   
+<br />
+
+``` SQL
+
 SELECT [VND].[DataAreaID]                        AS [Company_ID]
 
       ,[VND].[RecID]                             AS [Vendor_Record_ID]
@@ -38,5 +66,14 @@ SELECT [VND].[DataAreaID]                        AS [Company_ID]
        LEFT JOIN [dbo].[DlvTerm] AS [VND_DEL_TRM]
               ON [VND_DEL_TRM].[Code]       = [VND].[DlvTerm]
              AND [VND_DEL_TRM].[Partition]  = [VND].[Partition]
-             AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID]
+             AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID];
 
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
