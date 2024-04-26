@@ -47,6 +47,10 @@ SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
 
   FROM [dbo].[VendSettlement] AS [VND_STL]
 
+       LEFT JOIN [dbo].[VendTable] AS [VND]
+              ON [VND].[AccountNum] = [VND_STL].[AccountNum]
+             AND [VND].[DataAreaId] = [VND_STL].[DataAreaId]
+
        LEFT JOIN [dbo].[VendTrans] AS [VND_TRN]
               ON [VND_TRN].[RecId] = [VND_STL].[TransRecId]
              AND [VND_TRN].[DataAreaId] = [VND_STL].[DataAreaId]
@@ -56,10 +60,6 @@ SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
              AND [VND_INV_JRN].[LedgerVoucher] = [VND_TRN].[Voucher]
              AND [VND_INV_JRN].[InvoiceId] = [VND_TRN].[Invoice]
              AND [VND_INV_JRN].[DataAreaId] = [VND_TRN].[DataAreaId]
-
-       LEFT JOIN [dbo].[VendTable] AS [VND]
-              ON [VND].[AccountNum] = [VND_STL].[AccountNum]
-             AND [VND].[DataAreaId] = [VND_STL].[DataAreaId]
 
        LEFT JOIN [dbo].[PurchTable] AS [PUR]
               ON [PUR].[PurchId] = [VND_INV_JRN].[PurchId]
