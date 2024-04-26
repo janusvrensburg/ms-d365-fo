@@ -108,13 +108,13 @@ SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
 
   FROM [dbo].[VendSettlement] AS [VND_STL]
 
-       LEFT JOIN [dbo].[VendTable] AS [VND]
-              ON [VND].[AccountNum] = [VND_STL].[AccountNum]
-             AND [VND].[DataAreaId] = [VND_STL].[DataAreaId]
-
        LEFT JOIN [dbo].[VendTrans] AS [VND_TRN]
               ON [VND_TRN].[RecId] = [VND_STL].[TransRecId]
              AND [VND_TRN].[DataAreaId] = [VND_STL].[DataAreaId]
+
+       LEFT JOIN [dbo].[VendTable] AS [VND]
+              ON [VND].[AccountNum] = [VND_STL].[AccountNum]
+             AND [VND].[DataAreaId] = [VND_STL].[DataAreaId]
 
        LEFT JOIN [dbo].[VendInvoiceJour] AS [VND_INV_JRN]
               ON [VND_INV_JRN].[InvoiceAccount] = [VND_TRN].[AccountNum]
