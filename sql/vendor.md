@@ -22,50 +22,132 @@
 <!--- Page / Section --->
 <!---------------------->
 
-## Draft
+## Vendor Name Lookup
    
 <br />
 
 ``` SQL
-SELECT [VND].[DataAreaID]                        AS [Company_ID]
+SELECT [VND].[DataAreaId] AS [DataAreaId]
+      ,[VND].[RecId] AS [VendorRecId]
+      ,[VND].[AccountNum] AS [VendorId]
 
-      ,[VND].[RecID]                             AS [Vendor_Record_ID]
-      ,NULLIF([VND].[AccountNum], '')            AS [Vendor_ID]
-      ,NULLIF([VND_NME].[Name], '')              AS [Vendor_Name]
+      ,[VND_NME].[Name] AS [VendorName]
 
-      ,NULLIF([VND].[VendGroup], '')             AS [Vendor_Group_ID]
-      ,NULLIF([VND_GRP].[Name], '')              AS [Vendor_Group_Name]
+  FROM [dbo].[VendTable] AS [VND]
 
-      ,NULLIF([VND].[PaymTermID], '')            AS [Payment_Term_ID]
-      ,NULLIF([VND_PAY_TRM].[Description], '')   AS [Payment_Term_Name]
-
-      ,NULLIF([VND].[DlvTerm], '')               AS [Delivery_Term_ID]
-      ,NULLIF([VND_DEL_TRM].[TXT], '')           AS [Delivery_Term_Name]
-
-  FROM [dbo].[VendTable] AS [VND] -- Vendor
-
-       -- Vendor (Name) Lookup
        LEFT JOIN [dbo].[DirPartyTable] AS [VND_NME]
-              ON [VND_NME].[RecID]     = [VND].[Party]
-             AND [VND_NME].[Partition] = [VND].[Partition]
-       
-       -- Vendor Group Lookup
+              ON [VND_NME].[RecID] = [VND].[Party]
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Vendor Group Lookup
+   
+<br />
+
+``` SQL
+SELECT [VND].[DataAreaId] AS [DataAreaId]
+      ,[VND].[RecId] AS [VendorRecId]
+      ,[VND].[AccountNum] AS [VendorId]
+
+      ,[VND].[VendGroup] AS [VendorGroupId]
+      ,[VND_GRP].[Name] AS [VendorGroupName]
+
+  FROM [dbo].[VendTable] AS [VND]
+
        LEFT JOIN [dbo].[VendGroup] AS [VND_GRP]
               ON [VND_GRP].[VendGroup]  = [VND].[VendGroup]
-             AND [VND_GRP].[Partition]  = [VND].[Partition]
-             AND [VND_GRP].[DataAreaID] = [VND].[DataAreaID]
+             AND [VND_GRP].[DataAreaId] = [VND].[DataAreaId]
+```
 
-       -- Vendor Payment Term Lookup
-       LEFT JOIN [dbo].[PaymTerm] AS [VND_PAY_TRM]
-              ON [VND_PAY_TRM].[PaymTermID] = [VND].[PaymTermID]
-             AND [VND_PAY_TRM].[Partition]  = [VND].[Partition]
-             AND [VND_PAY_TRM].[DataAreaID] = [VND].[DataAreaID]
+<br />
+<br />
+<br />
 
-       -- Vendor Delivery Term Lookup
-       LEFT JOIN [dbo].[DlvTerm] AS [VND_DEL_TRM]
-              ON [VND_DEL_TRM].[Code]       = [VND].[DlvTerm]
-             AND [VND_DEL_TRM].[Partition]  = [VND].[Partition]
-             AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID];
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Payment Terms Lookup
+   
+<br />
+
+``` SQL
+SELECT [VND].[DataAreaId] AS [DataAreaId]
+      ,[VND].[RecId] AS [VendorRecId]
+      ,[VND].[AccountNum] AS [VendorId]
+
+      ,[VND].[PaymTermId] AS [PaymentTermId]
+      ,[PAY_TRM].[Description] AS [PaymentTermName]
+
+  FROM [dbo].[VendTable] AS [VND]
+
+       LEFT JOIN [dbo].[PaymTerm] AS [PAY_TRM]
+              ON [PAY_TRM].[PaymTermId] = [VND].[PaymTermId]
+             AND [PAY_TRM].[DataAreaId] = [VND].[DataAreaId]
+```
+
+<br />
+<br />
+<br />
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+
+
+<div style="page-break-after: always"> 
+
+
+
+<!---------------------->
+<!--- Page / Section --->
+<!---------------------->
+
+## Delivery Terms Lookup
+   
+<br />
+
+``` SQL
+SELECT [VND].[DataAreaId] AS [DataAreaId]
+      ,[VND].[RecId] AS [VendorRecId]
+      ,[VND].[AccountNum] AS [VendorId]
+
+      ,[VND].[DlvTerm] AS [DeliveryTermId]
+      ,[DEL_TRM].[Txt] AS [DeliveryTermName]
+
+  FROM [dbo].[VendTable] AS [VND]
+
+       LEFT JOIN [dbo].[DlvTerm] AS [DEL_TRM]
+              ON [DEL_TRM].[Code] = [VND].[DlvTerm]
+             AND [DEL_TRM].[DataAreaId] = [VND].[DataAreaId]
 ```
 
 <br />
