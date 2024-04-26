@@ -2,7 +2,7 @@
 <!--- Page / Section --->
 <!---------------------->
 
-# Vendor
+# Accounts Payable (AP)
 
 <br />
 <br />
