@@ -52,7 +52,7 @@ SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
              AND [VND_TRN].[DataAreaId] = [VND_STL].[DataAreaId]
 
        LEFT JOIN [dbo].[VendInvoiceJour] AS [VND_INV_JRN]
-              ON [VND_INV_JRN].[InvoiceAccount] = [VND_STL].[AccountNum]
+              ON [VND_INV_JRN].[InvoiceAccount] = [VND_TRN].[AccountNum]
              AND [VND_INV_JRN].[LedgerVoucher] = [VND_TRN].[Voucher]
              AND [VND_INV_JRN].[InvoiceId] = [VND_TRN].[Invoice]
              AND [VND_INV_JRN].[DataAreaId] = [VND_TRN].[DataAreaId]
