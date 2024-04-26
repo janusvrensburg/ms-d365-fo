@@ -63,7 +63,7 @@ SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
 
        LEFT JOIN [dbo].[PurchTable] AS [PUR]
               ON [PUR].[PurchId] = [VND_INV_JRN].[PurchId]
-             AND [PUR].[DataAreaId] = [VND_STL].[DataAreaId]
+             AND [PUR].[DataAreaId] = [VND_INV_JRN].[DataAreaId]
 ```
 
 <br />
