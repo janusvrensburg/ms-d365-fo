@@ -27,7 +27,6 @@
 <br />
 
 ``` SQL
-
 SELECT [VND].[DataAreaID]                        AS [Company_ID]
 
       ,[VND].[RecID]                             AS [Vendor_Record_ID]
@@ -67,7 +66,6 @@ SELECT [VND].[DataAreaID]                        AS [Company_ID]
               ON [VND_DEL_TRM].[Code]       = [VND].[DlvTerm]
              AND [VND_DEL_TRM].[Partition]  = [VND].[Partition]
              AND [VND_DEL_TRM].[DataAreaID] = [VND].[DataAreaID];
-
 ```
 
 <br />
