@@ -46,47 +46,20 @@
 <!--- Page / Section --->
 <!---------------------->
 
-## Vendor Transactions
+## Main Account
    
 <br />
 
 ``` SQL
-SELECT [VND_TRN].[DataAreaId] AS [DataAreaId]
-      ,[VND_TRN].[RecId] AS [VendorTransactionRecId]
+SELECT [ACC].[RecId] AS [MainAccountRecId]
+      ,[ACC].[MainAccountId] AS [MainAccountId]
+      ,[ACC].[Name] AS [MainAccountName]
+      ,[ACC].[Type] AS [AccountType]
+      ,[ACC_CAT].[Description] AS [AccountCategory]
+  FROM [AXDB].[dbo].[MainAccount] AS [ACC]
 
-      ,[VND_INV_JRN].[RecId] AS [VendorInvoiceJournalRecId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[PUR].[RecId] AS [PurchaseOrderRecId]
-
-      ,[VND_TRN].[Voucher] AS [Voucher]
-      ,[VND_TRN].[TransType] AS [TransactionType]
-
-      ,[VND_TRN].[DocumentDate] AS [InvoiceDate]
-      ,[VND_TRN].[DueDate] AS [DueDate]
-      ,[VND_TRN].[TransDate] AS [TransactionDate]
-      ,[VND_TRN].[Closed] AS [ClosedDate]
-
-      ,[VND_TRN].[CurrencyCode] AS [CurrencyCode]
-      ,[VND_TRN].[AmountCur] AS [TransactionAmount]
-      ,[VND_TRN].[SettleAmountCur] AS [SettlementAmount]
-
-      ,([VND_TRN].[AmountCur] - [VND_TRN].[SettleAmountCur]) AS [PayableAmount]
-
-  FROM [dbo].[VendTrans] AS [VND_TRN]
-
-       LEFT JOIN [dbo].[VendTable] AS [VND]
-              ON [VND].[AccountNum] = [VND_TRN].[AccountNum]
-             AND [VND].[DataAreaId] = [VND_TRN].[DataAreaId]
-
-       LEFT JOIN [dbo].[VendInvoiceJour] AS [VND_INV_JRN]
-              ON [VND_INV_JRN].[InvoiceAccount] = [VND_TRN].[AccountNum]
-             AND [VND_INV_JRN].[LedgerVoucher] = [VND_TRN].[Voucher]
-             AND [VND_INV_JRN].[InvoiceId] = [VND_TRN].[Invoice]
-             AND [VND_INV_JRN].[DataAreaId] = [VND_TRN].[DataAreaId]
-
-       LEFT JOIN [dbo].[PurchTable] AS [PUR]
-              ON [PUR].[PurchId] = [VND_INV_JRN].[PurchId]
-             AND [PUR].[DataAreaId] = [VND_INV_JRN].[DataAreaId]
+       LEFT JOIN [AXDB].[dbo].[MainAccountCategory] AS [ACC_CAT]
+              ON [ACC_CAT].[AccountCategoryRef] = [ACC].[AccountCategoryRef]
 ```
 
 <br />
@@ -107,194 +80,44 @@ SELECT [VND_TRN].[DataAreaId] AS [DataAreaId]
 <!--- Page / Section --->
 <!---------------------->
 
-## Vendor Settlement
+## General Ledger Transactions
    
 <br />
 
 ``` SQL
-SELECT [VND_STL].[DataAreaId] AS [DataAreaId]
-      ,[VND_STL].[RecId] AS [VendorSettlementRecId]
+SELECT [CMP].[DataArea] AS [DataAreaId]
+      ,[JRN_ENT].[SubledgerVoucherDataAreaId] AS [SubledgerVoucherDataAreaId]
+      ,[JRN_ACC_ENT].[RecId] AS [GeneralJournalAccountEntryRecId]
+      ,[JRN_ENT].[RecId] AS [GeneralJournalEntryRecId]
+      ,[ACC].[RecId] AS [MainAccountRecId]
 
-      ,[VND_TRN].[RecId] AS [VendorTransactionRecId]
-      ,[VND_INV_JRN].[RecId] AS [VendorInvoiceJournalRecId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[PUR].[RecId] AS [PurchaseOrderRecId]
+      ,[JRN_ACC_ENT].[LedgerAccount] AS [LedgerAccount]
+      ,[JRN_ACC_ENT].[LedgerDimension] AS [LedgerDimension]
+      ,[JRN_ENT].[JournalCategory] AS [JournalCategory]
+      ,[JRN_ENT].[JournalNumber] AS [JournalNumber]
+      ,[JRN_ENT].[SubledgerVoucher] AS [Voucher]
+      ,[JRN_ACC_ENT].[PostingType] AS [PostingType]
 
-      ,[VND_STL].[SettlementVoucher] AS [SettlementVoucher]
-      ,[VND_STL].[TransType] AS [TransactionType]
+      ,CONVERT(DATE, [JRN_ENT].[AccountingDate]) AS [TransactionDate]
 
-      ,[VND_TRN].[DocumentDate] AS [InvoiceDate]
-      ,[VND_STL].[DueDate] AS [DueDate]
-      ,[VND_STL].[TransDate] AS [TransactionDate]
+      ,[JRN_ACC_ENT].[TransactionCurrencyCode] AS [TransactionCurrencyCode]
+      ,[JRN_ACC_ENT].[TransactionCurrencyAmount] AS [TransactionCurrencyAmount]
+      ,[JRN_ACC_ENT].[AccountingCurrencyAmount] AS [AccountingCurrencyAmount]
+      ,[JRN_ACC_ENT].[ReportingCurrencyAmount] AS [ReportingCurrencyAmount]
 
-      ,[VND_TRN].[CurrencyCode] AS [CurrencyCode]
-      ,[VND_STL].[SettleAmountCur] AS [SettlementAmount]
+  FROM [AXDB].[dbo].[GeneralJournalAccountEntry] AS [JRN_ACC_ENT]
 
-  FROM [dbo].[VendSettlement] AS [VND_STL]
+       INNER JOIN [AXDB].[dbo].[GeneralJournalEntry] AS [JRN_ENT]
+               ON [JRN_ENT].[RecId] = [JRN_ACC_ENT].[GeneralJournalEntry]
 
-       LEFT JOIN [dbo].[VendTrans] AS [VND_TRN]
-              ON [VND_TRN].[RecId] = [VND_STL].[TransRecId]
-             AND [VND_TRN].[DataAreaId] = [VND_STL].[DataAreaId]
+       INNER JOIN [AXDB].[dbo].[MainAccount] AS [ACC]
+               ON [ACC].[RecId] = [JRN_ACC_ENT].[MainAccount]
 
-       LEFT JOIN [dbo].[VendTable] AS [VND]
-              ON [VND].[AccountNum] = [VND_STL].[AccountNum]
-             AND [VND].[DataAreaId] = [VND_STL].[DataAreaId]
+       INNER JOIN [AXDB].[dbo].[Ledger] AS [LGR]
+               ON [LGR].[RecId] = [JRN_ENT].[Ledger]
 
-       LEFT JOIN [dbo].[VendInvoiceJour] AS [VND_INV_JRN]
-              ON [VND_INV_JRN].[InvoiceAccount] = [VND_TRN].[AccountNum]
-             AND [VND_INV_JRN].[LedgerVoucher] = [VND_TRN].[Voucher]
-             AND [VND_INV_JRN].[InvoiceId] = [VND_TRN].[Invoice]
-             AND [VND_INV_JRN].[DataAreaId] = [VND_TRN].[DataAreaId]
-
-       LEFT JOIN [dbo].[PurchTable] AS [PUR]
-              ON [PUR].[PurchId] = [VND_INV_JRN].[PurchId]
-             AND [PUR].[DataAreaId] = [VND_INV_JRN].[DataAreaId]
-```
-
-<br />
-<br />
-<br />
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-
-
-<div style="page-break-after: always"> 
-
-
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-## Vendor Name Lookup
-   
-<br />
-
-``` SQL
-SELECT [VND].[DataAreaId] AS [DataAreaId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[VND].[AccountNum] AS [VendorId]
-
-      ,[VND_NME].[Name] AS [VendorName]
-
-  FROM [dbo].[VendTable] AS [VND]
-
-       LEFT JOIN [dbo].[DirPartyTable] AS [VND_NME]
-              ON [VND_NME].[RecID] = [VND].[Party]
-```
-
-<br />
-<br />
-<br />
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-
-
-<div style="page-break-after: always"> 
-
-
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-## Vendor Group Lookup
-   
-<br />
-
-``` SQL
-SELECT [VND].[DataAreaId] AS [DataAreaId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[VND].[AccountNum] AS [VendorId]
-
-      ,[VND].[VendGroup] AS [VendorGroupId]
-      ,[VND_GRP].[Name] AS [VendorGroupName]
-
-  FROM [dbo].[VendTable] AS [VND]
-
-       LEFT JOIN [dbo].[VendGroup] AS [VND_GRP]
-              ON [VND_GRP].[VendGroup]  = [VND].[VendGroup]
-             AND [VND_GRP].[DataAreaId] = [VND].[DataAreaId]
-```
-
-<br />
-<br />
-<br />
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-
-
-<div style="page-break-after: always"> 
-
-
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-## Payment Terms Lookup
-   
-<br />
-
-``` SQL
-SELECT [VND].[DataAreaId] AS [DataAreaId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[VND].[AccountNum] AS [VendorId]
-
-      ,[VND].[PaymTermId] AS [PaymentTermId]
-      ,[PAY_TRM].[Description] AS [PaymentTermName]
-
-  FROM [dbo].[VendTable] AS [VND]
-
-       LEFT JOIN [dbo].[PaymTerm] AS [PAY_TRM]
-              ON [PAY_TRM].[PaymTermId] = [VND].[PaymTermId]
-             AND [PAY_TRM].[DataAreaId] = [VND].[DataAreaId]
-```
-
-<br />
-<br />
-<br />
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-
-
-<div style="page-break-after: always"> 
-
-
-
-<!---------------------->
-<!--- Page / Section --->
-<!---------------------->
-
-## Delivery Terms Lookup
-   
-<br />
-
-``` SQL
-SELECT [VND].[DataAreaId] AS [DataAreaId]
-      ,[VND].[RecId] AS [VendorRecId]
-      ,[VND].[AccountNum] AS [VendorId]
-
-      ,[VND].[DlvTerm] AS [DeliveryTermId]
-      ,[DEL_TRM].[Txt] AS [DeliveryTermName]
-
-  FROM [dbo].[VendTable] AS [VND]
-
-       LEFT JOIN [dbo].[DlvTerm] AS [DEL_TRM]
-              ON [DEL_TRM].[Code] = [VND].[DlvTerm]
-             AND [DEL_TRM].[DataAreaId] = [VND].[DataAreaId]
+       INNER JOIN [AXDB].[dbo].[CompanyInfo] AS [CMP]
+               ON [CMP].[RecId] = [LGR].[PrimaryForLegalEntity]
 ```
 
 <br />
