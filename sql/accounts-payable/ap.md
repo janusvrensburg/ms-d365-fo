@@ -10,6 +10,8 @@ Overview of estimated project timeline (in elapsed time)
 
 <img src="./ap-data-model.drawio.svg">
 
+<img src="https://raw.githubusercontent.com/janusvrensburg/ms-d365-fo/main/accounts-payable/ap-data-model.drawio.svg">
+
 <br /> 
 
 > **PLEASE NOTE**
